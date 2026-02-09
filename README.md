@@ -1,6 +1,6 @@
 # FMCW Radar Target Generation and Detection
 
-This repository contains a **MATLAB implementation of an FMCW radar signal processing pipeline** for automotive target detection. The project simulates radar target motion and performs **range and velocity estimation** using FFT-based processing and **2D CFAR detection**, following standard radar techniques used in autonomous driving systems.
+This repository contains a **MATLAB implementation of an FMCW radar signal processing pipeline** for automotive target generation and detection. The project simulates radar target motion and performs **range and velocity estimation** using FFT-based processing and **2D CFAR detection**, following standard radar techniques used in autonomous driving systems.
 
 **Author:** Bhagyath Badduri
 
@@ -19,33 +19,33 @@ This repository contains a **MATLAB implementation of an FMCW radar signal proce
 
 ## 📊 Results & Visualization
 
-Instead of a video demo, the project results are demonstrated using **MATLAB-generated plots**, which clearly show radar detection performance at each stage of the pipeline.
+Instead of a video demo, the project results are demonstrated using **MATLAB-generated plots**, which clearly illustrate radar detection performance at each stage of the processing pipeline.
 
 ### 🔹 Range from First FFT
-This figure shows the range estimation obtained using a 1D FFT on the beat signal.
+This plot shows the estimated target range obtained using a **1D FFT** on the beat signal.
 
-![Range FFT](Range from First FFT.png)
+![Range from First FFT](Range from First FFT.png)
 
 ---
 
 ### 🔹 2D FFT Output – Range Doppler Map
-This plot represents the **Range–Doppler Map**, where target range and velocity are simultaneously estimated.
+This figure represents the **Range–Doppler Map**, showing both target range and relative velocity estimated using a **2D FFT**.
 
-![Range Doppler Map](2D FFT output - Range D map.png)
+![Range Doppler Map](2D FFT output - Range Doppler Map.png)
 
 ---
 
 ### 🔹 2D CFAR Detection Output
-This figure shows the final detection result after applying the **2D CFAR algorithm** to suppress noise and highlight the target.
+This plot shows the final detection result after applying the **2D CFAR algorithm**, suppressing noise and highlighting the detected target.
 
-![2D CFAR Output](The output of the 2D CFA process.png)
+![2D CFAR Output](The output of the 2D CFAR process.png)
 
 ---
 
 ## 🧠 Technical Concepts Used
 
 - FMCW radar principles  
-- Beat frequency analysis  
+- Beat frequency and range calculation  
 - Fast Fourier Transform (FFT)  
 - Doppler processing for velocity estimation  
 - Constant False Alarm Rate (CFAR) detection  
@@ -55,9 +55,10 @@ This figure shows the final detection result after applying the **2D CFAR algori
 ## 🛠️ Tools & Technologies
 
 - MATLAB  
-- Signal Processing techniques  
+- Signal processing techniques  
 - Automotive FMCW radar theory (77 GHz)  
 
 ---
+
 
 
