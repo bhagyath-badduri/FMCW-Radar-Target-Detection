@@ -24,21 +24,21 @@ Instead of a video demo, the project results are demonstrated using **MATLAB-gen
 ### 🔹 Range from First FFT
 This plot shows the estimated target range obtained using a **1D FFT** on the beat signal.
 
-![Range from First FFT](Range from First FFT.png)
+![Range from First FFT](Range%20from%20First%20FFT.png)
 
 ---
 
 ### 🔹 2D FFT Output – Range Doppler Map
 This figure represents the **Range–Doppler Map**, showing both target range and relative velocity estimated using a **2D FFT**.
 
-![Range Doppler Map](2D FFT output - Range Doppler Map.png)
+![Range Doppler Map](2D%20FFT%20output%20-%20Range%20Doppler%20Map.png)
 
 ---
 
 ### 🔹 2D CFAR Detection Output
 This plot shows the final detection result after applying the **2D CFAR algorithm**, suppressing noise and highlighting the detected target.
 
-![2D CFAR Output](The output of the 2D CFAR process.png)
+![2D CFAR Output](The%20output%20of%20the%202D%20CFAR%20process.png)
 
 ---
 
@@ -59,6 +59,5 @@ This plot shows the final detection result after applying the **2D CFAR algorith
 - Automotive FMCW radar theory (77 GHz)  
 
 ---
-
 
 
