@@ -1,8 +1,6 @@
 # FMCW Radar Target Generation and Detection
 
-This project implements an **FMCW radar signal processing pipeline** using **MATLAB** to simulate target generation, range estimation, and velocity detection for automotive radar applications.
-
-The project follows standard radar theory used in **autonomous driving and perception systems**, including waveform design, beat signal generation, FFT-based range estimation, and CFAR-based target detection.
+This repository contains a **MATLAB implementation of an FMCW radar signal processing pipeline** for automotive target detection. The project simulates radar target motion and performs **range and velocity estimation** using FFT-based processing and **2D CFAR detection**, following standard radar techniques used in autonomous driving systems.
 
 **Author:** Bhagyath Badduri
 
@@ -10,32 +8,56 @@ The project follows standard radar theory used in **autonomous driving and perce
 
 ## 📌 Project Overview
 
-- FMCW radar waveform design based on range and resolution requirements
-- Target motion modeling with constant velocity
-- Beat signal generation using transmitted and received signals
-- **Range estimation using 1D FFT**
-- **Range-Doppler Map generation using 2D FFT**
-- **2D CFAR implementation** for target detection
+- FMCW radar waveform design based on system requirements  
+- Target generation with constant velocity motion model  
+- Beat signal generation from transmitted and received signals  
+- **Range estimation using 1D FFT**  
+- **Range–Doppler Map generation using 2D FFT**  
+- **2D CFAR algorithm** for robust target detection  
 
 ---
 
-## 🧠 Technical Concepts
+## 📊 Results & Visualization
 
-- FMCW radar principles
-- Beat frequency and range calculation
-- Doppler processing for velocity estimation
-- Fast Fourier Transform (FFT)
-- Constant False Alarm Rate (CFAR) detection
+Instead of a video demo, the project results are demonstrated using **MATLAB-generated plots**, which clearly show radar detection performance at each stage of the pipeline.
+
+### 🔹 Range from First FFT
+This figure shows the range estimation obtained using a 1D FFT on the beat signal.
+
+![Range FFT](Range from First FFT.png)
+
+---
+
+### 🔹 2D FFT Output – Range Doppler Map
+This plot represents the **Range–Doppler Map**, where target range and velocity are simultaneously estimated.
+
+![Range Doppler Map](2D FFT output - Range D map.png)
+
+---
+
+### 🔹 2D CFAR Detection Output
+This figure shows the final detection result after applying the **2D CFAR algorithm** to suppress noise and highlight the target.
+
+![2D CFAR Output](The output of the 2D CFA process.png)
+
+---
+
+## 🧠 Technical Concepts Used
+
+- FMCW radar principles  
+- Beat frequency analysis  
+- Fast Fourier Transform (FFT)  
+- Doppler processing for velocity estimation  
+- Constant False Alarm Rate (CFAR) detection  
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- MATLAB
-- Signal Processing Toolbox
-- Automotive radar theory (77 GHz FMCW radar)
+- MATLAB  
+- Signal Processing techniques  
+- Automotive FMCW radar theory (77 GHz)  
 
 ---
 
-## 📂 Files in This Repository
 
